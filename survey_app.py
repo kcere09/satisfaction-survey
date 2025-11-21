@@ -1,3 +1,5 @@
+# 📚 Step-by-Step Guide: Building a Touchless Satisfaction Survey App in your github
+
 # -*- coding: utf-8 -*-
 # ============================================================================
 # TOUCHLESS SATISFACTION SURVEY - ENHANCED EDUCATIONAL VERSION
@@ -1430,7 +1432,7 @@ def admin_panel():
                         # Confusion Matrix
                         if 'confusion_matrix' in results:
                             st.markdown("### 🎯 Confusion Matrix")
-                           cm = np.array(results['confusion_matrix'])
+                            cm = np.array(results['confusion_matrix'])
                             fig, ax = plt.subplots(figsize=(8, 6))
                             sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax)
                             ax.set_xlabel('Predicted')
@@ -1668,3 +1670,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
